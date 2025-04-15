@@ -38,14 +38,6 @@ function loadGallery(galleryKey) {
     if(lightgalleryContainer) lightgalleryContainer.classList.remove('loaded');
 
 
-    // --- Preload full-size images in background for smoother lightbox ---
-    setTimeout(() => {
-        for (let i = 1; i <= galleryData.imageCount; i++) {
-            const img = new Image();
-            img.src = `gallery/${galleryKey}/${i}.jpg`;
-        }
-        console.log("Preloading full-size images...");
-    }, 300); // slight delay after gallery loads
 
     // Clear previous gallery items and destroy previous lightGallery instance if exists
     if (lightgalleryContainer) {
