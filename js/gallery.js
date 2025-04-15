@@ -89,7 +89,7 @@ function loadGallery(galleryKey) {
              lightGallery(lightgalleryContainer, {
                  plugins: [lgZoom, lgThumbnail],
                  selector: 'a',
-                 thumbnail: false, // Enable thumbnails in the lightbox UI
+                 thumbnail: true, // Enable thumbnails in the lightbox UI
                  download: false,
                  speed: 500,
              });
