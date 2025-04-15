@@ -4,7 +4,7 @@ const tinify = require("tinify");
 
 tinify.key = "wnddtjfDZrfztQcZqMB9ZBQJ6CBqWhLy"; // Replace with your actual Tinify API key
 
-const folderPath = path.join(__dirname, "gallery", "2");
+const folderPath = path.join(__dirname, "gallery", "5");
 
 fs.readdir(folderPath, (err, files) => {
     if (err) return console.error("❌ Error reading folder:", err);
