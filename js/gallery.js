@@ -67,7 +67,7 @@ function loadGallery(galleryKey) {
         // Populate gallery
         const galleryPath = `gallery/${galleryKey}/`;
         for (let i = 1; i <= galleryData.imageCount; i++) {
-            const fullImagePath = `${galleryPath}${i}_thumb.jpg`;
+            const fullImagePath = `${galleryPath}${i}.jpg`;
             const thumbImagePath = `${galleryPath}${i}_thumb.jpg`; // Assume _thumb convention
 
             const link = document.createElement('a');
@@ -89,7 +89,7 @@ function loadGallery(galleryKey) {
              lightGallery(lightgalleryContainer, {
                  plugins: [lgZoom, lgThumbnail],
                  selector: 'a',
-                 thumbnail: true, // Enable thumbnails in the lightbox UI
+                 thumbnail: false, // Enable thumbnails in the lightbox UI
                  download: false,
                  speed: 500,
              });
