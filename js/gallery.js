@@ -1,20 +1,25 @@
 const galleries = {
-    weddings: {
-        title: "Weddings",
+    1: {
+        title: "Ghost Town",
         description: "Capturing the magic and emotion of your special day.",
-        imageCount: 4 // Number of images in the gallery/weddings/ folder (1.jpg to 6.jpg)
+        imageCount: 20
     },
-    portraits: {
+    2: {
         title: "Portraits",
         description: "Revealing personality and character through the lens.",
-        imageCount: 4
+        imageCount: 8
     },
-    events: {
+    3: {
         title: "Events",
-        description: "Documenting the energy and moments of your important events.",
+        description: "აღწერა",
         imageCount: 3
     },
-    landscapes: {
+    4: {
+        title: "Landscapes",
+        description: "Exploring the beauty of the natural and built environment.",
+        imageCount: 4
+    },
+    5: {
         title: "Landscapes",
         description: "Exploring the beauty of the natural and built environment.",
         imageCount: 4
@@ -31,6 +36,16 @@ function loadGallery(galleryKey) {
     // --- Show loader, hide gallery initially ---
     if(loader) loader.style.display = 'flex';
     if(lightgalleryContainer) lightgalleryContainer.classList.remove('loaded');
+
+
+    // --- Preload full-size images in background for smoother lightbox ---
+    setTimeout(() => {
+        for (let i = 1; i <= galleryData.imageCount; i++) {
+            const img = new Image();
+            img.src = `gallery/${galleryKey}/${i}.jpg`;
+        }
+        console.log("Preloading full-size images...");
+    }, 300); // slight delay after gallery loads
 
     // Clear previous gallery items and destroy previous lightGallery instance if exists
     if (lightgalleryContainer) {

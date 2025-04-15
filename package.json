@@ -1,0 +1,17 @@
+{
+  "name": "taso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0tik/taso"
+  },
+  "private": true,
+  "dependencies": {
+    "sharp": "^0.34.1"
+  }
+}
