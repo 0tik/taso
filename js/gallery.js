@@ -67,7 +67,7 @@ function loadGallery(galleryKey) {
         // Populate gallery
         const galleryPath = `gallery/${galleryKey}/`;
         for (let i = 1; i <= galleryData.imageCount; i++) {
-            const fullImagePath = `${galleryPath}${i}.jpg`;
+            const fullImagePath = `${galleryPath}${i}_thumb.jpg`;
             const thumbImagePath = `${galleryPath}${i}_thumb.jpg`; // Assume _thumb convention
 
             const link = document.createElement('a');
