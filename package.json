@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
-    "sharp": "^0.34.1"
+    "sharp": "^0.34.1",
+    "tinify": "^1.8.0"
   }
 }
