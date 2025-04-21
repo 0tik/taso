@@ -114,7 +114,7 @@ function loadGallery(galleryKey) {
         console.error('Gallery data/elements not found for key:', galleryKey);
         if (galleryHeader) galleryHeader.textContent = "Gallery Not Found";
         if (galleryDescription) galleryDescription.textContent = "The requested gallery could not be loaded. Please check the URL or select a gallery from the homepage.";
-        document.title = "Gallery Not Found - Anastasia Abulade Photography";
+
         // Hide loader in error case too
         if(loader) loader.style.display = 'none';
     }
