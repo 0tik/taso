@@ -4,7 +4,7 @@ const tinify = require("tinify");
 
 tinify.key = "wnddtjfDZrfztQcZqMB9ZBQJ6CBqWhLy"; // Replace with your actual Tinify API key
 
-const folderPath = path.join(__dirname, "gallery", "5");
+const folderPath = path.join(__dirname, "gallery", "6");
 
 fs.readdir(folderPath, (err, files) => {
     if (err) return console.error("❌ Error reading folder:", err);
@@ -13,7 +13,7 @@ fs.readdir(folderPath, (err, files) => {
         const filePath = path.join(folderPath, file);
 
         // Skip if filename includes "thumb" or doesn't match numbered jpg format
-        if (/thumb/i.test(file) || !/^\d+\.jpe?g$/i.test(file)) {
+        if (/thumb/i.test(file) || !/^\d+\.png?g$/i.test(file)) {
             return;
         }
 
