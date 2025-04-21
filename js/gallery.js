@@ -5,24 +5,25 @@ const galleries = {
         imageCount: 20
     },
     2: {
-        title: "Portraits",
-        description: "Revealing personality and character through the lens.",
-        imageCount: 8
+        title: "Have You Seen the Mind of an Artist?",
+        description: "\"Have You Seen the Mind of an Artist?\" is a visual exploration of what it feels like to have a mind that never stops searching for new ideas. Through a series of tree photographs, this project reflects the endless branching of thoughts.\n" +
+            "This series is a personal journey, an invitation to step inside the evolving mind of an artist’s where chaos and clarity coexist.\n",
+        imageCount: 4
     },
     3: {
-        title: "Events",
-        description: "აღწერა",
-        imageCount: 3
+        title: "Ivry-sur-Seine",
+        description: "Ivry-Sur-Seine neighbourhood project features a bold, geometric style of Brutalist architecture, which reminds me of Soviet-era designs. It takes inspiration from older architectural styles and uses strong concrete buildings with practical layouts that are both useful and visually interesting. The project gives for me the area a fresh, modern look while still honouring its industrial past. The design creates a comfortable and welcoming atmosphere, with a focus on simple beauty that feels familiar to my roots. ",
+        imageCount: 11
     },
     4: {
-        title: "Landscapes",
-        description: "Exploring the beauty of the natural and built environment.",
-        imageCount: 4
+        title: "Portrait of Bede",
+        description: "",
+        imageCount: 5
     },
     5: {
-        title: "Landscapes",
-        description: "Exploring the beauty of the natural and built environment.",
-        imageCount: 4
+        title: "Portrait of Eijin",
+        description: "",
+        imageCount: 5
     }
 };
 
@@ -150,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (galleryPreviewContainer) {
         galleryPreviewContainer.innerHTML = ''; // Clear static placeholders
 
-        const previewKeys = galleryKeys.slice(0, 4); // Show first 4 galleries
+        const previewKeys = galleryKeys.slice(0, 5); // Show first 4 galleries
 
         previewKeys.forEach(key => {
             const galleryData = galleries[key];

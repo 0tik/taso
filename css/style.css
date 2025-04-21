@@ -277,7 +277,7 @@ header .container {
 
 /* === Homepage Specific === */
 .image-slider {
-
+    height: 75vh; /* Even taller */
     display: flex;
     justify-content: center;
     align-items: center;
