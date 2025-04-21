@@ -1,7 +1,7 @@
 const galleries = {
     1: {
         title: "Ghost Town",
-        description: "Capturing the magic and emotion of your special day.",
+        description: "This project focuses on a small, fading village in my country. Many villages are at risk of disappearing, often without recognition. The village I selected is located in the mountains of Georgia, home to only five families. These families live with a limited existence, lacking access to basic amenities such as schools, hospitals, or restaurants. They only have a small supermarket with basic essential needs. The migration of the younger generation for cities and better life, has left behind elderly residents deeply rooted in their homes. As I walked through the nearly demolished streets I felt that in the past these abandoned houses once were vibrant. Capturing the loneliness of this place is challenging yet vital, as it tells the story of a community fading from existence. Despite the desolation, life still exists. The remaining villagers have adapted and share treasured memories of the past, finding ways to connect with the land. I listened to their stories, discovering beauty in aged doors, peeling paint, and nature reclaiming spaces. Through my lens with these coloured pictures I wanted to show the beauty of these empty spaces and the life of those who remain. This project represents many places that go unheard, not just in Georgia but worldwide.",
         imageCount: 20
     },
     2: {

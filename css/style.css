@@ -277,8 +277,7 @@ header .container {
 
 /* === Homepage Specific === */
 .image-slider {
-    height: 75vh; /* Even taller */
-    background-color: #f0f0f0; /* Lighter grey */
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -367,7 +366,7 @@ footer {
     font-weight: 700;
 }
 .gallery-page-header p {
-    max-width: 650px;
+
     margin: 0 auto;
     color: #666;
     font-size: 1.05em;
