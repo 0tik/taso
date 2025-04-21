@@ -577,7 +577,6 @@ main.about {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: #f9f9f9;
 }
 
 .about-container {
@@ -589,12 +588,14 @@ main.about {
 .about-image {
     flex: 1;
     overflow: hidden;
+    padding: 120px;
+    padding-right: 0;
 }
 
 .about-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .about-text {
