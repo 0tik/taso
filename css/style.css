@@ -182,6 +182,7 @@ header .container {
     color: #555;
     border-radius: 4px; /* Slight rounding */
     transition: background-color 0.2s ease;
+    padding-top: 14px;
 }
 .share-button:hover {
     background-color: #f5f5f5;
@@ -657,5 +658,9 @@ main.about {
 
     .about-text p {
         font-size: 0.95rem;
+    }
+
+    .image-slider {
+        height: 100%;
     }
 }
