@@ -690,3 +690,46 @@ main.about {
         height: 100%;
     }
 }
+
+
+
+.gallery-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery-buttons::-webkit-scrollbar {
+    display: none; /* Optional: hide scrollbar for cleaner look */
+}
+
+.gallery-buttons a {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 6px 14px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border-radius: 0;
+}
+
+.gallery-buttons a:hover {
+    background-color: #f0f0f0;
+}
+
+.gallery-buttons a.selected {
+    background-color: black;
+    color: white;
+}
+

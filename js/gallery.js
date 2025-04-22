@@ -174,4 +174,37 @@ document.addEventListener('DOMContentLoaded', () => {
             galleryPreviewContainer.appendChild(link);
         });
     }
+
+    const galleryButtonsContainer = document.getElementById('galleryButtons');
+
+    if (galleryButtonsContainer) {
+        function renderGalleryButtons(selectedKey) {
+            galleryButtonsContainer.innerHTML = '';
+
+            Object.entries(galleries).forEach(([key, gallery]) => {
+                const btn = document.createElement('a');
+                btn.textContent = gallery.title;
+                btn.href = `#${key}`;
+                if (key === selectedKey) {
+                    btn.classList.add('selected');
+                }
+                galleryButtonsContainer.appendChild(btn);
+            });
+        }
+
+        // Initial button render
+        const currentHash = window.location.hash.substring(1);
+        const initialKey = galleries[currentHash] ? currentHash : Object.keys(galleries)[0];
+        renderGalleryButtons(initialKey);
+
+        // Update buttons on hash change
+        window.addEventListener('hashchange', () => {
+            const newHash = window.location.hash.substring(1);
+            const newKey = galleries[newHash] ? newHash : Object.keys(galleries)[0];
+            renderGalleryButtons(newKey);
+        });
+    }
+
+
+
 }); 
