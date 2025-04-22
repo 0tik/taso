@@ -50,7 +50,9 @@ body {
         display: none !important;
     }
 
-
+    .gallery-buttons {
+        flex-wrap: wrap !important;
+    }
 }
 
 
