@@ -27,6 +27,22 @@ body {
 
 
 
+@media (max-width: 720px) {
+    .image-slider {
+        background-image: url(baneri.png);
+        align-items: unset !important;
+        height: 300px !important;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 100% !important;
+    }
+}
+
 
 body.loaded {
     opacity: 1;
@@ -348,7 +364,7 @@ header .container {
 /* === Footer === */
 footer {
     text-align: center;
-    padding: 40px 0; /* More padding */
+    padding: 20px 0; /* More padding */
     margin-top: 50px;
     border-top: 1px solid #eee;
     font-size: 0.85em;
