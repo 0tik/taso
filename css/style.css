@@ -29,7 +29,7 @@ body {
 
 @media (max-width: 720px) {
     .image-slider {
-        background-image: url(baneri.png);
+        background-image: url('/baneri.png');
         align-items: unset !important;
         height: 300px !important;
         width: 100%;
@@ -40,6 +40,10 @@ body {
 
     .container {
         width: 100% !important;
+    }
+
+    .image-slider img {
+        display: none !important;
     }
 }
 
