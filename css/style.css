@@ -45,6 +45,10 @@ body {
     .image-slider img {
         display: none !important;
     }
+
+    .gallery-page-header > p  {
+        display: none !important;
+    }
 }
 
 
