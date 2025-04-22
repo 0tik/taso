@@ -49,6 +49,10 @@ body {
     .gallery-page-header > p  {
         display: none !important;
     }
+
+    .gallery-buttons {
+        flex-wrap: wrap !important;
+    }
 }
 
 
@@ -703,6 +707,7 @@ main.about {
     margin: 0 auto;
     max-width: 100%;
     box-sizing: border-box;
+    margin-top: -40px;
 }
 
 .gallery-buttons::-webkit-scrollbar {
@@ -732,4 +737,6 @@ main.about {
     background-color: black;
     color: white;
 }
+
+
 
