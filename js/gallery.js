@@ -61,7 +61,7 @@ function loadGallery(galleryKey) {
 
     if (galleryData && lightgalleryContainer && galleryHeader && galleryDescription) {
         // Update header and description
-        document.title = `${galleryData.title} Gallery - Anastasia Abulade Photography`; // Update page title
+        document.title = `${galleryData.title} Gallery - Anastasia Abuladze Photography`; // Update page title
         galleryHeader.textContent = galleryData.title;
         galleryDescription.textContent = galleryData.description;
 
@@ -77,6 +77,7 @@ function loadGallery(galleryKey) {
 
             const image = document.createElement('img');
             image.alt = `${galleryData.title} Image ${i}`;
+            image.loading = 'lazy';
             image.src = thumbImagePath; // Display the thumbnail in the grid
 
             link.appendChild(image);
